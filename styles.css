@@ -1,3 +1,63 @@
-.divBoard {
-background-color: black;
+:root {
+    --primary-dark: #333;
+    --prinmary-light: #ededed;
+    --secondary-light: #fefefe;
 }
+
+* {
+
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;   
+}
+
+.header {
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+}
+
+body {
+    background-color: var(--prinmary-light);
+    color: var(--primary-dark);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .settings {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   width: 200px;
+
+  }
+
+.grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    box-shadow: var(--primary-dark) 0px 0px 8px;
+  }
+
+button {
+      padding: 10px 20px;
+      border: 1px solid var(--primary-dark);
+      border-radius: 5px;
+      width: 100%;
+  } 

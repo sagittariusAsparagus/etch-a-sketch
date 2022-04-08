@@ -1,11 +1,19 @@
-const divContainer = document.getElementById("board-container")
-let board;
-let gridSize =  100;
-let fragment = document.createDocumentFragment();
+const DEFAULT_SIZE = 16
 
-for (let i = 0; i < gridSize; ++i) {
-    board = document.createElement("div");
-    board.className = "divBoard";
-    fragment.appendChild(board);
+const grid = document.getElementById('grid')
+
+
+function setupGrid(gridSize) {
+    grid.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`
+    grid.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`
+  
+    for (let i = 0; i < gridSize * gridSize; i++) {
+      const gridElement = document.createElement('div')
+      gridElement.classList.add("grid-element")
+      grid.appendChild(gridElement)
+    }
 }
-document.getElementById("board-container").appendChild(fragment);
+    
+window.onload = () =>{
+    setupGrid(DEFAULT_SIZE)
+}
