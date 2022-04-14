@@ -45,7 +45,7 @@ body {
    gap: 30px;
    width: 200px;
 
-  }
+}
 
 .grid {
     display: grid;
@@ -53,7 +53,20 @@ body {
     height: 500px;
     background-color: white;
     box-shadow: var(--primary-dark) 0px 0px 8px;
-  }
+}
+
+.grid-element {
+    user-select: none;
+}
+
+.grid-element-clicked {
+    background-color: var(--primary-dark);
+
+}
+
+.grid-element-clear {
+    background-color: var(--secondary-light)
+}
 
 button {
       padding: 10px 20px;

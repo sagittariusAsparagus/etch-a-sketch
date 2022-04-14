@@ -1,2 +1,3 @@
 # etch-a-sketch
-Odin Project Etch-a-sketch project
+Odin Project Etch-a-sketch project!
+Yes.
