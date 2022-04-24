@@ -27,10 +27,10 @@ function setupGrid(gridSize) {
 }
 
 function changeColor(e) {   
-    if(e.type === "mouseover" && mouseDown) {
+    if(e.type === 'mouseover' && !mouseDown) return 
         e.target.classList.add("grid-element-clicked")
     }
-}
+
 
     
 window.onload = () =>{
